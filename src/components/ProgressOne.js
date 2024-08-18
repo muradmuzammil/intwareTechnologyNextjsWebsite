@@ -1,15 +1,18 @@
-'use client'
-import dynamic from 'next/dynamic';
-import React from 'react';
-const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
+"use client";
+import dynamic from "next/dynamic";
+import React from "react";
+import ReactApexChart from "react-apexcharts";
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+  ssr: false,
+});
 
 const ProgressOne = () => {
   let options = {
     chart: {
       width: 380,
-      type: 'pie',
+      type: "pie",
     },
-    labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+    labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
     responsive: [
       {
         breakpoint: 480,
@@ -18,7 +21,7 @@ const ProgressOne = () => {
             width: 200,
           },
           legend: {
-            position: 'bottom',
+            position: "bottom",
           },
         },
       },
@@ -53,7 +56,7 @@ const ProgressOne = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: '30%', background: '#00D199' }}
+                    style={{ width: "30%", background: "#00D199" }}
                     aria-valuenow={30}
                     aria-valuemin={0}
                     aria-valuemax={100}
@@ -66,7 +69,7 @@ const ProgressOne = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: '25%', background: '#C87B07' }}
+                    style={{ width: "25%", background: "#C87B07" }}
                     aria-valuenow={25}
                     aria-valuemin={0}
                     aria-valuemax={100}
@@ -79,7 +82,7 @@ const ProgressOne = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: '35%', background: '#A92535' }}
+                    style={{ width: "35%", background: "#A92535" }}
                     aria-valuenow={35}
                     aria-valuemin={0}
                     aria-valuemax={100}
@@ -92,7 +95,7 @@ const ProgressOne = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: '20%', background: '#3D88FB' }}
+                    style={{ width: "20%", background: "#3D88FB" }}
                     aria-valuenow={20}
                     aria-valuemin={0}
                     aria-valuemax={100}
@@ -105,7 +108,7 @@ const ProgressOne = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: '28%', background: '#9116CD' }}
+                    style={{ width: "28%", background: "#9116CD" }}
                     aria-valuenow={28}
                     aria-valuemin={0}
                     aria-valuemax={100}
@@ -118,7 +121,7 @@ const ProgressOne = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: '10%', background: '#5637C8' }}
+                    style={{ width: "10%", background: "#5637C8" }}
                     aria-valuenow={10}
                     aria-valuemin={0}
                     aria-valuemax={100}
