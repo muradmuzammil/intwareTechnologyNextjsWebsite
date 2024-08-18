@@ -243,7 +243,7 @@ const FooterOne = () => {
                     src="assets/img/intwareNameLogowithBG.svg"
                     alt="img"
                     style={{
-                      height: "70px",
+                      height: "71px",
                     }}
                   />
                 </div>
