@@ -1,10 +1,11 @@
 "use client";
 import dynamic from "next/dynamic";
 import React from "react";
-import ReactApexChart from "react-apexcharts";
-const ReactApexChart = dynamic(() => import("react-apexcharts"), {
-  ssr: false,
-});
+// import ReactApexChart from "react-apexcharts";
+// import ReactApexChart from "react-apexcharts";
+// const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+//   ssr: false,
+// });
 
 const ProgressOne = () => {
   let options = {
@@ -132,11 +133,14 @@ const ProgressOne = () => {
             <div className="col-xl-6 text-center">
               <div className="ps-4">
                 <div id="chart">
-                  <ReactApexChart
+                  {/* <ReactApexChart
                     options={options}
                     series={series}
                     type="donut"
-                  />
+                  /> */}
+                  <button onClick={() => console.log(options, series)}>
+                    testing
+                  </button>
                 </div>
                 <div id="html-dist"></div>
               </div>
