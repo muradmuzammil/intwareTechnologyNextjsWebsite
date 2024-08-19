@@ -1,4 +1,4 @@
-//  Client Component
+//  use client
 import AboutAreaNine from "@/components/AboutAreaNine";
 import BannerNine from "@/components/BannerNine";
 import BlogAreaNine from "@/components/BlogAreaNine";
