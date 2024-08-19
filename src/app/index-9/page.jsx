@@ -21,7 +21,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <button onClick={() => console.log("index-9")}>test</button>
+      <button>test</button>
     </>
     // <>
     //   {/* NavbarEight */}
