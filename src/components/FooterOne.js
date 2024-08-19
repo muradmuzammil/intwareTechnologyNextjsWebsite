@@ -9,7 +9,10 @@ import {
   FaPhoneAlt,
   FaTwitter,
   FaYoutube,
+  FaLinkedin,
 } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+// import { FaLinkedin } from "react-icons/fa";
 
 const FooterOne = () => {
   return (
@@ -228,7 +231,7 @@ const FooterOne = () => {
         </div> */}
         <div className="container pt-5">
           <div className="row">
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="widget widget_about">
                 <div
                   // className="bg-white"
@@ -252,18 +255,21 @@ const FooterOne = () => {
                     {/* Melbourne is simply is dumiomy is text Lorem Ipsum is simply */}
                   </p>
                   <p className="mt-3">
-                    <FaPhoneAlt /> (+91) 8668563824
+                    <FaPhoneAlt /> (+91) 9403680184
                   </p>
-                  <p className="mt-2">
-                    <FaEnvelope /> (+91) 8483814283
-                  </p>
+
                   <ul className="social-media">
-                    <li>
-                      <Link href="#">
-                        <FaFacebookF />
+                    <li className="d-flex">
+                      <Link
+                        href="https://www.linkedin.com/company/intware-technology/"
+                        target="_blank"
+                        className="me-2"
+                      >
+                        <FaLinkedin />
                       </Link>
+                      Intware Technology
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="#">
                         <FaTwitter />
                       </Link>
@@ -277,49 +283,49 @@ const FooterOne = () => {
                       <Link href="#">
                         <FaYoutube />
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="widget widget_nav_menu">
                 <h4 className="widget-title">Our Service</h4>
                 <ul>
-                  <li>
+                  {/* <li>
                     <Link href="/service">
                       <FaArrowRight /> Ui Design
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link href="/service">
                       <FaArrowRight /> Web design
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link href="/service">
                       <FaArrowRight /> Digital marketing{" "}
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/service">
                       <FaArrowRight /> Mobile App Development
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service">
+                    <Link href="/service-2">
                       <FaArrowRight /> Web App Development
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service">
+                    <Link href="/service-3">
                       <FaArrowRight /> Software App Development
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            {/* <div className="col-lg-3 col-md-6">
               <div className="widget widget_nav_menu">
                 <h4 className="widget-title">Pay links</h4>
                 <ul>
@@ -355,45 +361,26 @@ const FooterOne = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
+            </div> */}
+            <div className="col-lg-4 col-md-6">
               <div className="widget widget-recent-post">
                 <h4 className="widget-title">Contact us</h4>
                 <ul>
                   <li>
                     <div className="media">
-                      <div className="media-left">
+                      {/* <div className="media-left">
                         <img src="assets/img/widget/1.png" alt="blog" />
-                      </div>
-                      <div className="media-body align-self-center">
-                        <div className="post-info mb-2">
-                          <FaCalendarAlt />
-                          <span>january 11, 2023</span>
-                        </div>
-                        <h6 className="title mb-0">
-                          <Link href="/blog-details">
-                            Social Media For Promote Business.
-                          </Link>
-                        </h6>
+                      </div> */}
+                      <div className="text-white">
+                        <FaPhoneAlt className="text-primary me-3" /> (+91)
+                        9403680184
                       </div>
                     </div>
                   </li>
                   <li>
-                    <div className="media">
-                      <div className="media-left">
-                        <img src="assets/img/widget/2.png" alt="blog" />
-                      </div>
-                      <div className="media-body align-self-center">
-                        <div className="post-info mb-2">
-                          <FaCalendarAlt />
-                          <span>january 11, 2023</span>
-                        </div>
-                        <h6 className="title mb-0">
-                          <Link href="/blog-details">
-                            Marketing For Base market watch
-                          </Link>
-                        </h6>
-                      </div>
+                    <div className="text-white">
+                      <MdEmail className="text-primary me-3" />{" "}
+                      sales@intwaretechnology.com
                     </div>
                   </li>
                 </ul>
@@ -408,8 +395,8 @@ const FooterOne = () => {
                 <p>© Intware Technology 2020 | All Rights Reserved</p>
               </div>
               <div className="col-md-6 text-lg-end">
-                <Link href="#">Trams &amp; Condition</Link>
-                <Link href="#">Privacy Policy</Link>
+                {/* <Link href="#">Trams &amp; Condition</Link>
+                <Link href="#">Privacy Policy</Link> */}
                 <Link href="#">Contact Us</Link>
               </div>
             </div>

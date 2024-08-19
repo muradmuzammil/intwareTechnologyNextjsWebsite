@@ -354,11 +354,11 @@ const FaqAreaOne = () => {
                   src="assets/img/connectPic.png"
                   alt="img"
                 />
-                <img
+                {/* <img
                   className="animate-img-bottom-right top_image_bounce"
                   src="assets/img/about/5.png"
                   alt="img"
-                />
+                /> */}
               </div>
             </div>
             <div
