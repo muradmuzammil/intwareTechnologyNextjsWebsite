@@ -1,7 +1,40 @@
-import Link from "next/link";
-import React from "react";
+// import Link from "next/link";
+"use client";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 
 const ContactAreaOne = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log(e);
+    // Please See Documentation for more information
+    emailjs
+      .sendForm(
+        "service_csmtlnm", //YOUR_SERVICE_ID
+        "template_2oqk4cy", //YOUR_TEMPLATE_ID
+        form.current,
+        "TETjJiShRN3ITpc8G" //YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            toast.success("Massage Sent Successfully!");
+            form.current[0].value = "";
+            form.current[1].value = "";
+            form.current[2].value = "";
+            form.current[3].value = "";
+          }
+        },
+        (error) => {
+          if (error.text !== "OK") {
+            toast.success("Massage Not Sent!");
+          }
+        }
+      );
+  };
   return (
     <>
       {/* ========================= contact Area One start =========================*/}
@@ -42,44 +75,71 @@ const ContactAreaOne = () => {
                   <h2 className="title">
                     Bringing Your <span>Vision</span> To Life
                   </h2>
-                  <p className="content">
+                  {/* <p className="content">
                     For your car we will do everything advice design in us
                     repairs and maintenance. We are the some preferred.
-                  </p>
-                  <form className="mt-4">
+                  </p> */}
+                  <form className="mt-4" ref={form} onSubmit={sendEmail}>
                     <div className="row">
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="text" placeholder="Your Name" />
+                          <input
+                            type="text"
+                            id="name"
+                            name="user_name"
+                            placeholder="Your Name"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="text" placeholder="Your Email" />
+                          <input
+                            id="email"
+                            name="user_email"
+                            type="email"
+                            placeholder="Your Email"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="text" placeholder="Your Phone" />
+                          <input
+                            type="number"
+                            id="phone"
+                            name="phone"
+                            placeholder="Your Phone"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="text" placeholder="Your Subject" />
+                          <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Your Subject"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12">
                         <div className="single-input-inner style-border">
-                          <textarea placeholder="Message" defaultValue={""} />
+                          <textarea
+                            name="message"
+                            id="massage"
+                            cols="1"
+                            rows="5"
+                            placeholder="Message"
+                            defaultValue={""}
+                          />
                         </div>
                       </div>
-                      <div className="col-12">
-                        <Link
-                          className="btn btn-black mt-0 w-100 border-radius-5"
-                          href="#"
+                      <div className="col-12 text-center">
+                        <button
+                          type="submit"
+                          className="btn btn-base border-radius-5 w-100"
                         >
-                          Submit now
-                        </Link>
+                          Send Message
+                        </button>
                       </div>
                     </div>
                   </form>

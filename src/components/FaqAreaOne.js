@@ -403,12 +403,10 @@ const FaqAreaOne = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      With over a decade of experience, our 100+ technicians
-                      deliver tailored software solutions for all your digital
-                      needs. We offer web and mobile app development, AI/ML
-                      Development solutions, digital marketing, and e-commerce
-                      solutions, using the latest technologies and agile
-                      methods. Our rigorous quality assurance ensures secure,
+                      We offer web and mobile app development, AI/ML Development
+                      solutions, digital marketing, and e-commerce solutions,
+                      using the latest technologies and agile methods. Our
+                      rigorous quality assurance ensures secure,
                       high-performance software, with ongoing maintenance.
                       Partner with Webelight Solutions for innovative and
                       reliable software, backed by a client-centric approach and

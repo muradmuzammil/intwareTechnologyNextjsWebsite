@@ -46,7 +46,7 @@ const NavBar = () => {
         className={searchShow ? "td-search-popup active" : "td-search-popup "}
         id="td-search-popup"
       >
-        <form action="/" className="search-form">
+        {/* <form action="/" className="search-form">
           <div className="form-group">
             <input
               type="text"
@@ -57,7 +57,7 @@ const NavBar = () => {
           <button type="submit" className="submit-btn">
             <FaSearch />
           </button>
-        </form>
+        </form> */}
       </div>
       {/* search popup end*/}
       <div
@@ -158,13 +158,17 @@ const NavBar = () => {
                 <Link href="#">Service</Link>
                 <ul className="sub-menu">
                   <li>
-                    <Link href="/service">Mobile App Development</Link>
+                    <Link href="/mobile-app-dev-service">
+                      Mobile App Development
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/service-2">Web App Development</Link>
+                    <Link href="/web-app-dev-service">Web App Development</Link>
                   </li>
                   <li>
-                    <Link href="/service-3">Software Development</Link>
+                    <Link href="/software-app-dev-service">
+                      Software Development
+                    </Link>
                   </li>
                   {/* <li>
                     <Link href="/service-4">Service 04</Link>

@@ -4,9 +4,9 @@ import "./font.css";
 import "./globals.scss";
 
 export const metadata = {
-  title: "Service || AglieTech - IT Solutions & Technology NEXT JS Template",
+  title: "Service | Intware Technology - IT Solutions ",
   description:
-    "Agiletech provide you to build the best agency, app, business, digital, it services, it solutions, network solution, startup, technology, technology company, technology service template.",
+    "Intware Technology provide you to build the best agency, app, business, digital, it services, it solutions, network solution, startup, technology, technology company, technology service template.",
 };
 
 export default function RootLayout({ children }) {

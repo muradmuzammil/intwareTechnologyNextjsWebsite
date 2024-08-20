@@ -254,12 +254,12 @@ const FooterOne = () => {
                   <p>
                     {/* Melbourne is simply is dumiomy is text Lorem Ipsum is simply */}
                   </p>
-                  <p className="mt-3">
+                  {/* <p className="mt-3">
                     <FaPhoneAlt /> (+91) 9403680184
-                  </p>
+                  </p> */}
 
                   <ul className="social-media">
-                    <li className="d-flex">
+                    <li className="ms-3">
                       <Link
                         href="https://www.linkedin.com/company/intware-technology/"
                         target="_blank"
@@ -267,7 +267,6 @@ const FooterOne = () => {
                       >
                         <FaLinkedin />
                       </Link>
-                      Intware Technology
                     </li>
                     {/* <li>
                       <Link href="#">

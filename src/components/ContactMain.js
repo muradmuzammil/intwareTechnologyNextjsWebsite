@@ -7,13 +7,14 @@ const ContactMain = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(e);
     // Please See Documentation for more information
     emailjs
       .sendForm(
-        "**********", //YOUR_SERVICE_ID
-        "**********", //YOUR_TEMPLATE_ID
+        "service_csmtlnm", //YOUR_SERVICE_ID
+        "template_2oqk4cy", //YOUR_TEMPLATE_ID
         form.current,
-        "**********" //YOUR_PUBLIC_KEY
+        "TETjJiShRN3ITpc8G" //YOUR_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -50,6 +51,7 @@ const ContactMain = () => {
                   vident.For your car we will do som everything. */}
                 </p>
               </div>
+
               <form ref={form} onSubmit={sendEmail}>
                 <div className="row">
                   <div className="col-md-12">

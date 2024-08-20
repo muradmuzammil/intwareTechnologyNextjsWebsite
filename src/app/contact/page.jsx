@@ -4,7 +4,7 @@ import FooterOne from "@/components/FooterOne";
 import NavBar from "@/components/NavBar";
 
 export const metadata = {
-  title: "Contact || Intware Technology",
+  title: "Contact | Intware Technology",
   description:
     "Intware Technology provide you to build the best agency, app, business, digital, it services, it solutions, network solution, startup, technology, technology company, technology service template.",
 };

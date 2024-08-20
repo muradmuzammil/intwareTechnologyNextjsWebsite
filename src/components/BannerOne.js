@@ -40,7 +40,7 @@ const BannerOne = () => {
                 >
                   Making The <span>Digital</span> World Work For You
                 </h2>
-                <p
+                {/* <p
                   className="content pe-xl-5"
                   data-aos="fade-right"
                   data-aos-delay="250"
@@ -49,7 +49,7 @@ const BannerOne = () => {
                   And In Order To Make A Business, Brand Advertising And
                   Marketing Plays An Important Role. Similarly, In Making
                   Cultivation Business Are Necessary.
-                </p>
+                </p> */}
                 <Link
                   className="btn btn-border-base"
                   data-aos="fade-right"
