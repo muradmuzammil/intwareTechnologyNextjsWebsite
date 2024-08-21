@@ -156,7 +156,8 @@ const ContactMain = () => {
         {/* contact list start */}
         {/* map start */}
         <div className="contact-g-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.88265964451995!2d78.40535581537124!3d17.40884669404978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb972cca1279e7%3A0xddddb9efd4c0028a!2sBaigs%20%26%20Mirs%20residency!5e0!3m2!1sen!2sin!4v1724086383664!5m2!1sen!2sin" />
+          {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.88265964451995!2d78.40535581537124!3d17.40884669404978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb972cca1279e7%3A0xddddb9efd4c0028a!2sBaigs%20%26%20Mirs%20residency!5e0!3m2!1sen!2sin!4v1724086383664!5m2!1sen!2sin" /> */}
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0669000690636!2d78.40329527421002!3d17.408576802196297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb970dd1f4759f%3A0xe9c2419ea33e618f!2sOverDose%20Cafe!5e0!3m2!1sen!2sin!4v1724244819715!5m2!1sen!2sin" />
         </div>
         {/* map end */}
       </>
