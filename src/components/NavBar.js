@@ -88,20 +88,20 @@ const NavBar = () => {
             <Link href="/">
               <div className="d-flex align-items-center">
                 <img
-                  src="assets/img/intwareNameLogo.svg"
+                  src="assets/img/intwareNameLogowithoutBG-1.png"
                   alt="img"
                   style={{
-                    height: "50px",
+                    height: "45px",
                   }}
                 />
               </div>
             </Link>
           </div>
-          <div className="nav-right-part nav-right-part-mobile">
+          {/* <div className="nav-right-part nav-right-part-mobile">
             <span className="search-bar-btn" onClick={searchActive}>
               <FaSearch />
             </span>
-          </div>
+          </div> */}
           <div
             className={
               active
