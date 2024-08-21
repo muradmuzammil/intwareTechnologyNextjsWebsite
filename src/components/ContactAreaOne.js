@@ -2,7 +2,7 @@
 "use client";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-hot-toast";
+import { toast, Toaster } from "react-hot-toast";
 
 const ContactAreaOne = () => {
   const form = useRef();
@@ -26,6 +26,7 @@ const ContactAreaOne = () => {
             form.current[1].value = "";
             form.current[2].value = "";
             form.current[3].value = "";
+            form.current[4].value = "";
           }
         },
         (error) => {
@@ -38,6 +39,7 @@ const ContactAreaOne = () => {
   return (
     <>
       {/* ========================= contact Area One start =========================*/}
+      <Toaster position="bottom-center" reverseOrder={false} />
       <div className="contact-area">
         <div className="container">
           <div className="contact-inner-1">
