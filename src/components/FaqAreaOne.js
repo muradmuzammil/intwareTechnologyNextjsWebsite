@@ -372,11 +372,11 @@ const FaqAreaOne = () => {
                 <h2 className="title">
                   Creating <span>Digital</span> Masterpieces
                 </h2>
-                <p className="content">
+                {/* <p className="content">
                   It is a long established fact that a reader will be distr
                   acted bioiiy the end gail designa readable content of a page
                   when looking.
-                </p>
+                </p> */}
               </div>
               <div
                 className="accordion accordion-inner style-2 accordion-icon-left mt-3"
@@ -407,10 +407,7 @@ const FaqAreaOne = () => {
                       solutions, digital marketing, and e-commerce solutions,
                       using the latest technologies and agile methods. Our
                       rigorous quality assurance ensures secure,
-                      high-performance software, with ongoing maintenance.
-                      Partner with Webelight Solutions for innovative and
-                      reliable software, backed by a client-centric approach and
-                      competitive pricing.
+                      high-performance software.
                     </div>
                   </div>
                 </div>
